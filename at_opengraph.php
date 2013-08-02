@@ -5,7 +5,7 @@
  *
  * @author Ahmet Topal
  * @link http://ahmet-topal.com
- * @license http://opensource.org/licenses/MIT
+ * @license http://creativecommons.org/licenses/by-sa/2.0/
  */
 class At_OpenGraph {
 	// bool
