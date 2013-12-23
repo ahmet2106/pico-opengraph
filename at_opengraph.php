@@ -68,6 +68,10 @@ class At_OpenGraph {
 			);
 		}
 		
+		if (isset($this->settings['opengraph_default_image'])) {
+			$images[] = $this->settings['opengraph_default_image'];
+		}
+		
 		$this->images = $images;
 	}
 	
