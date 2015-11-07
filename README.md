@@ -1,20 +1,26 @@
 # Pico OpenGraph Plugin
 
-This is a Plugin for the Flat File Based CMS named [Pico](pico.dev7studios.com/).
+This plugin is for the Flat-File-CMS [Pico](http://picocms.org/), and
+is __Version 1.0-compatible__!
 
 ## use
 
-Copy the `at_opengraph.php` File to the `plugins` Folder in the Root of your Pico Project. Every Plugin in this Folder is activated automatically.
+* Copy the `PicoATOpenGraph.php` File to the `plugins` folder in the root of your Pico Project.
 
-## notes
+* Copy the below configuration array in your `config/config.php`
 
-This Plugin was coded at 5 in the morning only to test the [Plugin API of Pico](http://pico.dev7studios.com/docs.html#plugins), so maybe it has some bugs - but..
-
-**Fixed some?** Feel free to push a request ;)
+    ```
+    //PicoATOpenGraph Configuration
+    $config['PicoATOpenGraph'] = array(
+        'enabled' => true,
+        'defaultImage' => 'path/to/default/image.jpg'
+    );
+    ```
+* Set your default image path as a backup when images cannot be found on a page
 
 ## what it does
 
-This Plugin is enabling the [Open Graph Protocol](http://ogp.me/) to your site the right way. The Frontpage is mentioned as a "website" Object, every sub Page as "article". So it meta properties like:
+This Plugin is enabling the [Open Graph Protocol](http://ogp.me/) to your site the right way. The front-page is mentioned as a "website" object, every sub-page as an "article". So in meta properties like:
 
 * **og:type** website or article, mentioned as above.
 * **og:title** the title of each of your content files
@@ -28,11 +34,17 @@ only if the requested site exists (not 404).
 Read more about the Open Graph Protocol [here](http://ogp.me/).
 
 
-## licence
+## license
 
-CreativeCommons2.0 licence: [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
+CreativeCommons2.0 license: [CC BY-SA](http://creativecommons.org/licenses/by-sa/2.0/)
 
 You are free to share & remix this code only if you mention me as coder of this base.
+
+## notes
+
+This Plugin was coded at 5 in the morning only to test the [Plugin API of Pico](http://pico.dev7studios.com/docs.html#plugins), so maybe it has some bugs - but..
+
+**Fixed some?** Feel free to push a request ;)
 
 
 ## copyright
